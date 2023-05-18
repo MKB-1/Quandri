@@ -1,8 +1,4 @@
-# For more details on the format and content:
-# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
-
 tasks:
-  # Task names here are used when executing the bots, so renaming these is recommended.
   Retrieve data from Wikipedia:
     shell: python wikipedia_producer.py
 
