@@ -19,7 +19,7 @@ class RobotProducer(TalkativeRobot):
     def say_hello(self):
         print("Hello, my name is " + self.name)
         print("As a producer robot, my job is to create jobs for the consumer robot.")
-        print("For this task, I will navigate to the appropriate wikipedia articles, extract the relevant data, preprocess the data, and save it as a json file.")
+        print("For this task, I will navigate to the appropriate wikipedia articles, extract the relevant data, preprocess the data, and save it as a json file.\n")
         
 
     def say_goodbye(self):
