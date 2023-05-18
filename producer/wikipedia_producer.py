@@ -15,11 +15,14 @@ def introduce_yourself():
     robot.say_hello()
 
 def main():
-    introduce_yourself()
     for scientist in SCIENTISTS:
         robot.extract_scientist_data(scientist)
 
+def conclude():
     robot.say_goodbye()
-    
+
+
 if __name__ == "__main__":
+    introduce_yourself()
     main()
+    conclude()

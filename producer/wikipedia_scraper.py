@@ -8,11 +8,11 @@ import traceback
 from typing import List
 
 from shared.custom_typing import InfoboxDict, JSONData
-
+from shared.TalkativeRobot import TalkativeRobot
 
 br = Selenium()
 
-class RobotProducer:
+class RobotProducer(TalkativeRobot):
     def __init__(self, name):
         self.name = name
 
@@ -27,21 +27,20 @@ class RobotProducer:
 
     def extract_scientist_data(self, scientist_name: str):
         """
-        Opens a new browser, 
-        searches wikipedia for scientist name, 
-        extracts first paragraph & infobox data, 
-        and closes browser.
+        Opens a new browser, searches wikipedia for scientist name, extracts first paragraph & infobox data, and closes browser.
+        Parameters:
+            scientist_name (str): string to use as key for searching Wikipedia and naming file with extracted data.
         """
-        logger.info(f"Scrapping {scientist_name}'s page on Wikipedia...", also_console=True)
+        logger.info(f"Producing {scientist_name} data...", also_console=True)
         self._search_wikipedia(scientist_name)
         self._extract_data_from_wikipedia_webpage(scientist_name)
         br.close_browser()
         
 
-    def _search_wikipedia(self, search_term: str) -> bool:
+    def _search_wikipedia(self, search_term: str):
         """
         Opens wikipedia in the English language and navigates to the search term page.
-        Searching on wikipedia can result in 3 cases:
+        Searching on wikipedia can result in 4 cases:
         Case 1. Search results in a wikipedia article which is a person
                 e.g. Marie Curie -> https://en.wikipedia.org/wiki/Marie_Curie
         Case 2. Search results in a wikipedia article which is not a person
@@ -50,6 +49,9 @@ class RobotProducer:
                 e.g. Marie -> https://en.wikipedia.org/wiki/Marie
         Case 4. Search results in a wikipedia search with links to articles
                 e.g. Search for me -> https://en.wikipedia.org/w/index.php?search=search+for+me&title=Special%3ASearch&ns0=1
+
+        Parameters:
+            search_term (str): string to search in Wikipedia
         """
 
         br.open_available_browser("https://www.wikipedia.org/")
@@ -64,6 +66,8 @@ class RobotProducer:
         """
         Navigates to a wikipedia article and extracts the first paragraph and key-value pairs from the infobox.
         Saves data as a json file at data/title.json
+        Parameters:
+            title (str): string to use as file name for extracted data.
         """
         data: JSONData = {}
 
@@ -89,7 +93,8 @@ class RobotProducer:
         """
         Retrieves the first paragraph of a wikipedia article by selecting the first non-empty <p> in the div with id="bodyContent".
         Finds the first non-empty <p> by selecting first <p> without class="mw-empty-elt"
-
+        Returns:
+            str: Text contained in <p>
         """
         body_content_web_element: WebElement = br.find_element(locator="id:bodyContent")
         first_paragraph_web_element: WebElement = br.find_element(locator='xpath:.//p[not(@class="mw-empty-elt")][1]', parent=body_content_web_element)
@@ -102,6 +107,8 @@ class RobotProducer:
         Does not properly extract data for every row because there are too many different cases to account for.
         If the header of the row is known, preprocessing can be done within this method.
         Data preprocessing should be done within this method because it is easier to do on WebElements than on strings.
+        Returns
+            InfoBoxDict: Dict with the webscrapped data
         """
         infobox_data: InfoboxDict = {}
         tbody_web_element: WebElement = br.find_element(locator='xpath://table[contains(@class, "infobox")]/tbody[1]')
@@ -138,15 +145,18 @@ class RobotProducer:
             
             infobox_data[th_text] = td_val
 
-
+            # Since we're interested in the length of life, we're extracting the necessary information when we encounter it
+            # For both Born and Died we can find a date string in the format "YYYY-MM-DD" within a <span>
             if th_text == 'Born':
                 logger.info("...Preprocessing birth date...", also_console=True)
-                birthday = br.find_element(locator='xpath:.//span[@class="bday"]', parent=td).get_attribute("innerHTML")
-                infobox_data["extracted_birth_date"] = birthday
+                # birth_date format: YYYY-MM-DD
+                birth_date = br.find_element(locator='xpath:.//span[@class="bday"]', parent=td).get_attribute("innerHTML")
+                infobox_data["extracted_birth_date"] = birth_date
             elif th_text == 'Died':
                 logger.info("...Preprocessing death date...", also_console=True)
                 death_date = br.find_element(locator='xpath:.//span', parent=td).get_attribute("innerHTML")
-                infobox_data["extracted_death_date"] = death_date[1:-1]  # remove parenthesis around date
+                # death_date format: (YYYY-MM-DD)
+                infobox_data["extracted_death_date"] = death_date[1:-1]  # remove parenthesis around death_date
             
 
         return infobox_data
