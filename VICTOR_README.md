@@ -16,3 +16,13 @@ I have edited the SCIENTIST list to include a term which yields each type of err
 
 ## Logging
 In addition to the stdout.log file which is automatically generated, I included an extra log file for each robot, located in the output directory (e.g. producer/output).
+
+## Selenium 
+### Browser Implicit Wait
+To prevent trying to access elements before they exist on the DOM, I set
+```br.set_browser_implicit_wait(2)```
+so that Selenium waits 2 seconds before every action
+
+### Opening & Closing Browsers
+I'm unsure what the best practice is, but I opted for opening a new browser for every wikipedia search and closing it when I extracted the necessary data.
+I chose to do this so that each robot task remains pure and does not affect the next task.

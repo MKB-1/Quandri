@@ -55,6 +55,8 @@ class RobotProducer(TalkativeRobot):
         """
 
         br.open_available_browser("https://www.wikipedia.org/")
+        br.set_browser_implicit_wait(2)
+
 
         search_box: WebElement = br.find_element(locator="id:searchInput")
         search_btn: WebElement = br.find_element(locator="xpath://div[3]/form/fieldset/button")
