@@ -1,0 +1,87 @@
+{
+    "first_paragraph": "Albert Einstein (/\u02c8a\u026ansta\u026an/ EYEN-styne;[4] German: [\u02c8alb\u025b\u0281t \u02c8\u0294a\u026an\u0283ta\u026an] (listen); 14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist,[5] widely acknowledged to be one of the greatest and most influential physicists of all time. Best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics. Relativity and quantum mechanics are the two pillars of modern physics.[1][6] His mass\u2013energy equivalence formula E = mc2, which arises from relativity theory, has been dubbed \"the world's most famous equation\".[7] His work is also known for its influence on the philosophy of science.[8][9] He received the 1921 Nobel Prize in Physics \"for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\",[10] a pivotal step in the development of quantum theory. His intellectual achievements and originality resulted in \"Einstein\" becoming synonymous with \"genius\".[11] Einsteinium, one of the synthetic elements in the periodic table, was named in his honor.[12]",
+    "infobox": {
+        "Born": "14 March 1879\nUlm, Kingdom of W\u00fcrttemberg, German Empire",
+        "extracted_birth_date": "1879-03-14",
+        "Died": "18 April 1955 (aged\u00a076)\nPrinceton, New Jersey, US",
+        "extracted_death_date": "1955-04-18",
+        "Citizenship": [
+            ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}\nKingdom of W\u00fcrttemberg, part of the German\u00a0Empire (until 1896)[note 1]\nStateless (1896\u20131901)\nSwitzerland (1901\u20131955)\nAustria, part of the Austro-Hungarian Empire (1911\u20131912)\nKingdom of Prussia, part of the German Empire (1914\u20131918)[note 1]\nFree State of Prussia (Weimar Republic, 1918\u20131933)\nUnited States (from 1940)\n\n",
+            "Kingdom of W\u00fcrttemberg, part of the German\u00a0Empire (until 1896)[note 1]",
+            "Stateless (1896\u20131901)",
+            "Switzerland (1901\u20131955)",
+            "Austria, part of the Austro-Hungarian Empire (1911\u20131912)",
+            "Kingdom of Prussia, part of the German Empire (1914\u20131918)[note 1]",
+            "Free State of Prussia (Weimar Republic, 1918\u20131933)",
+            "United States (from 1940)"
+        ],
+        "Education": [
+            "Federal polytechnic school in Zurich (Federal teaching diploma, 1900)",
+            "University of Zurich (PhD, 1905)"
+        ],
+        "Known\u00a0for": [
+            "General relativity",
+            "Special relativity",
+            "Photoelectric effect",
+            "E=mc2 (mass\u2013energy equivalence)",
+            "E=hf (Planck\u2013Einstein relation)",
+            "Theory of Brownian motion",
+            "Einstein field equations",
+            "Bose\u2013Einstein statistics",
+            "Bose\u2013Einstein condensate",
+            "Gravitational wave",
+            "Cosmological constant",
+            "Unified field theory",
+            "EPR paradox",
+            "Ensemble interpretation",
+            "List of other concepts"
+        ],
+        "Spouses": [
+            "",
+            ""
+        ],
+        "Children": [
+            "Lieserl",
+            "Hans Albert",
+            "Eduard \"Tete\""
+        ],
+        "Awards": [
+            "Barnard Medal (1920)",
+            "Nobel Prize in Physics (1921)",
+            "Matteucci Medal (1921)",
+            "ForMemRS (1921)[1]",
+            "Copley Medal (1925)[1]",
+            "Gold Medal of the Royal Astronomical Society (1926)[2]",
+            "Max Planck Medal (1929)",
+            "Member of the National Academy of Sciences (1942)[3]",
+            "Time Person of the Century (1999)"
+        ],
+        "Fields": "Physics, philosophy",
+        "Institutions": [
+            "Swiss Patent Office (Bern) (1902\u20131909)",
+            "University of Bern (1908\u20131909)",
+            "University of Zurich (1909\u20131911)",
+            "Charles University in Prague (1911\u20131912)",
+            "ETH Zurich (1912\u20131914)",
+            "Prussian Academy of Sciences (1914\u20131933)",
+            "Humboldt University of Berlin (1914\u20131933)",
+            "Kaiser Wilhelm Institute (director, 1917\u20131933)",
+            "German Physical Society (president, 1916\u20131918)",
+            "Leiden University (visits, 1920)",
+            "Institute for Advanced Study, Princeton University (1933\u20131955)",
+            "California Institute of Technology (visits, 1931\u20131933)",
+            "University of Oxford (visits, 1931\u20131933)",
+            "Brandeis University (director, 1946\u20131947)"
+        ],
+        "Thesis": "Eine neue Bestimmung der Molek\u00fcldimensionen (A New Determination of Molecular Dimensions)\u00a0(1905)",
+        "Doctoral advisor": "Alfred Kleiner",
+        "Other\u00a0academic advisors": "Heinrich Friedrich Weber",
+        "Influences": [
+            "Hendrik Lorentz",
+            "Hermann Minkowski"
+        ],
+        "Influenced": [
+            "Virtually all modern physicists"
+        ]
+    }
+}

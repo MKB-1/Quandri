@@ -1,0 +1,49 @@
+{
+    "first_paragraph": "Charles Robert Darwin FRS FRGS FLS FZS JP[6] (/\u02c8d\u0251\u02d0rw\u026an/[7] DAR-win; 12 February 1809 \u2013 19 April 1882) was an English naturalist, geologist, and biologist,[8] widely known for his contributions to evolutionary biology. His proposition that all species of life have descended from a common ancestor is now generally accepted and considered a fundamental concept in science.[9] In a joint publication with Alfred Russel Wallace, he introduced his scientific theory that this branching pattern of evolution resulted from a process he called natural selection, in which the struggle for existence has a similar effect to the artificial selection involved in selective breeding.[10] Darwin has been described as one of the most influential figures in human history and was honoured by burial in Westminster Abbey.[11][12]",
+    "infobox": {
+        "Born": "Charles Robert Darwin\n12 February 1809\nShrewsbury, England",
+        "extracted_birth_date": "1809-02-12",
+        "Died": "19 April 1882 (aged\u00a073)\nDown, Kent, England",
+        "extracted_death_date": "1882-04-19",
+        "Resting place": "Westminster Abbey",
+        "Alma\u00a0mater": "University of Edinburgh Medical School (no degree)\nChrist's College, Cambridge (BA, 1831; MA, 1836)[2]",
+        "Known\u00a0for": [
+            "The Voyage of the Beagle",
+            "On the Origin of Species",
+            "The Descent of Man"
+        ],
+        "Spouse": "Emma Wedgwood \u200b(m.\u00a01839)\u200b",
+        "Children": "10",
+        "Awards": [
+            "FRS (1839)[3]",
+            "Royal Medal (1853)[4]",
+            "Wollaston Medal (1859)[4]",
+            "Copley Medal (1864)[4]",
+            "Baly Medal (1879)[4]",
+            "Pour le M\u00e9rite, Prussia (1867)[4]",
+            "Doctor of Laws (Honorary), Cambridge (1877)[5]"
+        ],
+        "Fields": "Natural history, geology",
+        "Institutions": [
+            "Geological Society of London"
+        ],
+        "Academic advisors": [
+            "John Stevens Henslow",
+            "Adam Sedgwick"
+        ],
+        "Influences": [
+            "Lyell",
+            "Humboldt",
+            "Herschel",
+            "Malthus"
+        ],
+        "Influenced": [
+            "Hooker",
+            "Huxley",
+            "Spencer",
+            "Haeckel"
+        ],
+        "Author\u00a0abbrev. (botany)": "Darwin",
+        "Author\u00a0abbrev. (zoology)": "Darwin"
+    }
+}
